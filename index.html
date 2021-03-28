@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <div class="circle"></div>
+
+        <header>
+           <!-- <a href="#"><img src="photos/logo.png"/></a> --> 
+          
+            <div class="toggle" onclick="toggleMenu()"></div>
+            
+            <ul class="navigation">
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> Beers</a></li>
+                <li><a href="#"> Crew</a></li>
+                
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2> Home Brewery</h2>
+                <p> Page under construction </p>
+                <a href="#">ABOUT</a>
+            </div>
+
+            <div class="imgBox">
+                         <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide" ><img src="photos/corona.png"/></div>
+                    <div class="swiper-slide" ><img src="photos/corona.png"/></div>
+                    <div class="swiper-slide" ><img src="photos/corona.png"/></div>
+                    <div class="swiper-slide" ><img src="photos/corona.png"/></div>
+                    <div class="swiper-slide" ><img src="photos/corona.png"/></div>
+                    <div class="swiper-slide" ><img src="photos/corona.png"/></div>
+                   
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <ul class="mediabar">
+            <li><a href="#"><img src="photos/facebook.png"></a></li>
+            <li><a href="#"><img src="photos/twitter.png"></a></li>
+            <li><a href="#"><img src="photos/instagram.png"></a></li>
+        </ul>
+
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 400,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          loop:true,
+        });
+
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+      </script>
+    
+</body>
+</html>
