@@ -332,7 +332,7 @@ header .navigation .img-wrapper {
     .toggle{
         
         position: fixed;
-        margin-top: 30px;
+        margin-top: 5vh;
         width: 30px;
         height: 30px;
         background-size: 30px;
@@ -343,7 +343,7 @@ header .navigation .img-wrapper {
         z-index: 10000;
     }
     .toggle.active{
-        margin-top:20px;
+        margin-top: 5vh;
         background-size: 30px;
         background: url("../img/close.png");
         background-repeat: no-repeat;
@@ -355,6 +355,27 @@ header .navigation .img-wrapper {
 
 
 @media (max-width: 325px){
+
+    .toggle{
+        
+        position: fixed;
+        margin-top: 5vh;
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+        background: url("../img/menu.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 10000;
+    }
+    .toggle.active{
+        margin-top: 5vh;
+        background-size: 30px;
+        background: url("../img/close.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
     .content .textBox h2 {
         color: #fff;
@@ -372,12 +393,26 @@ header .navigation .img-wrapper {
         
     }
 
-    .swiper-slide{
+
+
+
+
+    .swiper-container {
+   
+        width: 100vw;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    
+      .swiper-slide{
         background-position: center;
         background-size: cover;
-        width: 100px;
+        width: 150px;
         height: 200px;
         display: flex;
         justify-content: center;
     }
+
+    
+
 }
