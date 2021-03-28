@@ -262,7 +262,7 @@ header .navigation li a{
         width: 30px;
         height: 30px;
         background-size: 30px;
-        background: url("img/menu.png");
+        background: url("../img/menu.png");
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
@@ -270,7 +270,7 @@ header .navigation li a{
     }
     .toggle.active{
         background-size: 30px;
-        background: url("img/close.png");
+        background: url("../img/close.png");
         background-repeat: no-repeat;
         background-position: center;
     }
