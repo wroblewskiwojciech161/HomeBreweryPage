@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles2.css">
+    
     <title>Home Brewery</title>
 </head>
 <body>
@@ -16,24 +18,32 @@
         <div class="circle"></div>
 
         <header>
-           <!-- <a href="#"><img src="photos/logo.png"/></a> --> 
+          
           
             <div class="toggle" onclick="toggleMenu()"></div>
+
+            
             
             <ul class="navigation" id="navigation">
+                <div class="img-wrapper">
+                    <img src="./img/logomain.png"/>
+                </div>
                 <li><a href="#home" onclick="toggleMenu()" > Home</a></li>
                 <li><a href="#beers" onclick="toggleMenu()"> Beers</a></li>
                 <li><a href="#crew" onclick="toggleMenu()"> Crew</a></li>
                 <li><a href="#contact" onclick="toggleMenu()"> Contact</a></li>
                 
             </ul>
+          
         </header>
 
         <div class="content">
             <div class="textBox">
-                <h2> Home Brewery</h2>
-                <p> Page under construction </p>
-                <a href="#">ABOUT</a>
+                <h2> HOPe DOPE</h2>
+                <p>Home Brewery</p>
+                <p class="redlabel">page under construction 👨‍🔧</p>
+              <!--  <p> Page under construction </p>--> 
+                <a href="#beers">Beers</a>
             </div>
 
             <div class="imgBox">
@@ -65,17 +75,45 @@
 
 
     <div class="beersBox" id="beers">
-            <p>BEERS</p>
+        <img src="./img/logomain.png"/>
+        <p>piwo >> student</p>
     </div>
+
+        
+
     <div class="crewBox" id="crew">
            <p>CREW</p>
+            <!-- beer animation-->
+        <div id="container">
+            <div class="glass">
+              <div class="beer"></div>
+            </div>
+            <div class="head"></div>
+            <div class="pour"></div>
+          </div>
     </div>
+
+
+
     <div class="contactBox" id="contact">
-           <p>CONTACT</p>
+        <p>CONTACT</p>
+        <!-- beer animation-->
+        <div id="container">
+            <div class="glass">
+              <div class="beer"></div>
+            </div>
+            <div class="head"></div>
+            <div class="pour"></div>
+          </div>
+       
     </div>
 
 
+    <!--beer script-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
+
+    <!--slider script-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
@@ -97,6 +135,23 @@
         });
 
 
+    $(function() {
+    function beerRise() {
+        $('.beer').addClass('fill');
+        $('.head').addClass('active');
+    }
+    function pourBeer() {
+        $('.pour').addClass('pouring');
+        beerRise();
+        setTimeout(function() {
+        $('.pour').addClass('end');
+        }, 3000);
+    }
+    setTimeout(function() {
+        pourBeer();
+    }, 3000);
+    });
+
     function toggleMenu(){
         const menuToggle = document.querySelector('.toggle');
         const navigation = document.querySelector('.navigation');
@@ -114,6 +169,8 @@
         var x = document.getElementById("menu");
           x.style.right = "0";
       }
+
+
       </script>
     
 </body>

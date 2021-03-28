@@ -9,7 +9,7 @@
 section{
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     padding: 100px;
     display: flex;
     justify-content: space-between;
@@ -39,9 +39,9 @@ header{
 
 
 }
-header .logo{
+header a .logo{
     position: relative;
-    max-width: 150px;
+   width: 500px;
 
 }
 header .navigation{
@@ -60,6 +60,10 @@ header .navigation li a{
     margin-left: 40px;
 
 }
+header .navigation .img-wrapper {
+   display: none;
+   
+}
 
 .content {
     position: relative;
@@ -69,12 +73,14 @@ header .navigation li a{
     align-items: center;
 }
 .content .textBox{
+   text-align: center;
    position: center;
    max-width: 600px;
    margin-right: 20px;
 }
 
 .content .textBox h2 {
+   
     color: #fff;
     font-size: 5rem;
     margin-bottom: 20px;
@@ -83,7 +89,12 @@ header .navigation li a{
 }
 .content .textBox p {
     color: #fff;
-    font-size: 3rem;
+    font-size: 2rem;
+
+}
+.content .textBox .redlabel {
+    color: red;
+    font-size: 1.5rem;
    
     
 }
@@ -102,23 +113,27 @@ header .navigation li a{
 }
  .crewBox, .beersBox , .contactBox{
     display: flex;
-    height: 60vh;
+    height: 100vh;
     width: 100%;
     justify-content: center;
     align-items: center;
     color: white;
     font-size: 40px;
+    flex-direction: column;
 }
 .crewBox{
     background: #222;
 }
 .beersBox{
-    background: rgb(92, 79, 79);
+    background: rgb(22, 22, 22);
 }
 .contactBox{
     background: rgb(214, 65, 65);
 }
-
+.beersBox img{
+    height: 50%;
+    width: auto;
+}
 
 .mediabar{
     position: absolute;
@@ -158,12 +173,14 @@ header .navigation li a{
 
 /*slider*/
 .swiper-container {
+   
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
   .swiper-slide {
+      
     background-position: center;
     background-size: cover;
     width: 250px;
@@ -202,7 +219,9 @@ header .navigation li a{
 /* mobile version */
 @media (max-width: 991px){
     header{
-        padding: 40px;
+        
+        padding: 50px;
+       
     }
     section {
         padding: 150px 40px;
@@ -217,22 +236,31 @@ header .navigation li a{
     }
     .content .textBox,.content .imgBox {
         max-width: 100%;
+        
     }
 
     
      .content .textBox h2 {
          color: #fff;
          font-size: 2rem;
+         margin-top: 50px;
          margin-bottom: 20px;
          line-height: 2.5rem;
      
      }
+    
      .content .textBox p {
          color: #fff;
          font-size: 20px;
         
          
      }
+     .content .textBox .redlabel {
+        color: red;
+        font-size: 18px;
+       
+        
+    }
      .content .textBox a {
         display: none;
        
@@ -258,6 +286,7 @@ header .navigation li a{
         align-items: center;
         color: white;
         font-size: 40px;
+        
     }
     section .circle {
         position: absolute;
@@ -288,8 +317,21 @@ header .navigation li a{
         font-size: 2rem;
         font-weight: 300;
     }
+
+    header .navigation .img-wrapper {
+        display: grid;
+        width: 10rem;
+        height: 10rem;
+    }
+    header .navigation .img-wrapper img{
+        height: 100%;
+        width: 100%;
+       
+    }
     .toggle{
+        
         position: fixed;
+        margin-top: 30px;
         width: 30px;
         height: 30px;
         background-size: 30px;
@@ -300,9 +342,14 @@ header .navigation li a{
         z-index: 10000;
     }
     .toggle.active{
+        margin-top:20px;
         background-size: 30px;
         background: url("../img/close.png");
         background-repeat: no-repeat;
         background-position: center;
     }
 }
+
+
+
+
