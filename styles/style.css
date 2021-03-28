@@ -100,35 +100,23 @@ header .navigation li a{
      text-decoration: none;  
     
 }
- .crewBox{
+ .crewBox, .beersBox , .contactBox{
     display: flex;
-    height: 80vh;
+    height: 60vh;
     width: 100%;
-    background: #222;
     justify-content: center;
     align-items: center;
     color: white;
     font-size: 40px;
+}
+.crewBox{
+    background: #222;
 }
 .beersBox{
-    display: flex;
-    height: 80vh;
-    width: 100%;
     background: rgb(92, 79, 79);
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 40px;
 }
 .contactBox{
-    display: flex;
-    height: 80vh;
-    width: 100%;
     background: rgb(214, 65, 65);
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 40px;
 }
 
 
@@ -262,6 +250,15 @@ header .navigation li a{
         display: none;
     }
 
+    .crewBox, .beersBox , .contactBox{
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 40px;
+    }
     section .circle {
         position: absolute;
         top : 0;
