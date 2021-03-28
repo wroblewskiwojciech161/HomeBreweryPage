@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     
 }
 
@@ -44,7 +45,7 @@ header .logo{
 
 }
 header .navigation{
-    position: relative;
+    position: fixed;
     display: flex;
 }
 header .navigation li{
@@ -99,6 +100,38 @@ header .navigation li a{
      text-decoration: none;  
     
 }
+ .crewBox{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    background: #222;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+}
+.beersBox{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    background: rgb(92, 79, 79);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+}
+.contactBox{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    background: rgb(214, 65, 65);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+}
+
+
 .mediabar{
     position: absolute;
     bottom: 40px;
@@ -185,13 +218,14 @@ header .navigation li a{
     }
     section {
         padding: 150px 40px;
-
+        height: 100vh;
     }
     .media{
         left: 40px;
     }
     .content {
         flex-direction: column;
+        
     }
     .content .textBox,.content .imgBox {
         max-width: 100%;
@@ -207,7 +241,7 @@ header .navigation li a{
      }
      .content .textBox p {
          color: #fff;
-         font-size: 2px;
+         font-size: 20px;
         
          
      }
@@ -235,7 +269,7 @@ header .navigation li a{
         width: 100%;
         height: 100%;
         background: black;
-        clip-path: polygon(0% 0%,80% 0%,100% 100%,18% 100%);
+        clip-path: polygon(20% 0%,83% 0%,100% 46%,100% 81%,100% 100%,15% 100%,0% 60%,0% 0%);
        
     }
     header .navigation.active{
@@ -250,15 +284,15 @@ header .navigation li a{
         justify-content: center;
         align-items: center;
         z-index: 10;
-        clip-path: polygon(0% 0%,80% 0%,100% 100%,18% 100%);
+        clip-path: polygon(20% 0%,83% 0%,100% 46%,100% 81%,100% 100%,15% 100%,0% 60%,0% 0%);
     }
     header .navigation li a{
-        margin: 10px 0;
-        font-size: 1.5rem;
+        margin: 20px 0;
+        font-size: 2rem;
         font-weight: 300;
     }
     .toggle{
-        position: relative;
+        position: fixed;
         width: 30px;
         height: 30px;
         background-size: 30px;

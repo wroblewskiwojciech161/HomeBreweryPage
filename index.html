@@ -8,11 +8,11 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <title>Home Brewery</title>
 </head>
 <body>
 
-    <section>
+    <section id="home">
         <div class="circle"></div>
 
         <header>
@@ -20,10 +20,11 @@
           
             <div class="toggle" onclick="toggleMenu()"></div>
             
-            <ul class="navigation">
-                <li><a href="#"> Home</a></li>
-                <li><a href="#"> Beers</a></li>
-                <li><a href="#"> Crew</a></li>
+            <ul class="navigation" id="navigation">
+                <li><a href="#home" onclick="toggleMenu()" > Home</a></li>
+                <li><a href="#beers" onclick="toggleMenu()"> Beers</a></li>
+                <li><a href="#crew" onclick="toggleMenu()"> Crew</a></li>
+                <li><a href="#contact" onclick="toggleMenu()"> Contact</a></li>
                 
             </ul>
         </header>
@@ -52,13 +53,29 @@
 
         </div>
 
-        <ul class="mediabar">
+   
+
+        <ul id="mediabar" class="mediabar">
             <li><a href="#"><img src="img/facebook.png"></a></li>
             <li><a href="#"><img src="img/twitter.png"></a></li>
             <li><a href="#"><img src="img/instagram.png"></a></li>
         </ul>
 
     </section>
+
+
+    <div class="beersBox" id="beers">
+            <p>BEERS</p>
+    </div>
+    <div class="crewBox" id="crew">
+           <p>CREW</p>
+    </div>
+    <div class="contactBox" id="contact">
+           <p>CONTACT</p>
+    </div>
+
+
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
@@ -86,6 +103,17 @@
         menuToggle.classList.toggle('active');
         navigation.classList.toggle('active');
     }
+
+
+    function myFunction() {
+        var x = document.getElementById("navigation");
+          x.style.right = "-100%";
+      }
+    
+      function myFunction1() {
+        var x = document.getElementById("menu");
+          x.style.right = "0";
+      }
       </script>
     
 </body>
