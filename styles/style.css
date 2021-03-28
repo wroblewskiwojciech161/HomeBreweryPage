@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Bangers', cursive;
     
 }
 
@@ -82,9 +83,9 @@ header .navigation .img-wrapper {
 .content .textBox h2 {
    
     color: #fff;
-    font-size: 5rem;
-    margin-bottom: 20px;
-    line-height: 4rem;
+    font-size: 7rem;
+    margin-bottom: 50px;
+    line-height: 6rem;
 
 }
 .content .textBox p {
@@ -242,10 +243,10 @@ header .navigation .img-wrapper {
     
      .content .textBox h2 {
          color: #fff;
-         font-size: 2rem;
-         margin-top: 50px;
+         font-size: 3rem;
+        
          margin-bottom: 20px;
-         line-height: 2.5rem;
+         
      
      }
     
@@ -353,3 +354,30 @@ header .navigation .img-wrapper {
 
 
 
+@media (max-width: 325px){
+
+    .content .textBox h2 {
+        color: #fff;
+        font-size: 2rem;
+       
+        margin-bottom: 20px;
+        
+    
+    }
+   
+    .content .textBox p {
+        color: #fff;
+        font-size: 20px;
+       
+        
+    }
+
+    .swiper-slide{
+        background-position: center;
+        background-size: cover;
+        width: 100px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+    }
+}
