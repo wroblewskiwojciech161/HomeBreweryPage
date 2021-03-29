@@ -1,9 +1,8 @@
-
+*{
+    background-color: black;
+}
 .beer-gallery{
-    padding-top: 5vh;
-    
-    width: 100vw;
-    height: 100%;
+    margin-top: 10vh;
     background: black;
     display: flex;
     flex-direction: column;
@@ -18,7 +17,7 @@
     
     display: flex;
     flex-direction: row;
-    height: 60vh;
+    height: 70vh;
     background: black;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -38,13 +37,27 @@
 .beer-gallery .card .textBox h2{
     font-size: 2rem;
     line-height: 2.5rem;
+    color: red;
+    max-width: 40%;
     
 }
-
+.beer-gallery .card  p{
+    color: white;
+    font-size: 1.2rem;
+    
+}
 
 .beer-gallery .card .textBox p{
     font-size: 1.2rem;
     
+}
+
+.beer-gallery .card .textBox p img{
+    padding: 5px 5px 5px 5px;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .beer-gallery .card img{
@@ -57,6 +70,10 @@
     color: red;
     font-family: 'Bangers', cursive;
     font-size: 2rem;
+    background: white;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
@@ -69,6 +86,7 @@
         background: black;
         padding-left: 10px;
         padding-right: 10px;
+        max-width: 40%;
         
     }
 
@@ -83,11 +101,21 @@
         font-size: 3rem;
         
     }
+
+    .beer-gallery .card .textBox p img{
+        height: 50px;
+        width: auto;
+        
+    }
     .back-button{
         text-decoration: none;
         color: red;
         font-family: 'Bangers', cursive;
         font-size: 4rem;
+        background: white;
+        border-radius: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
 
