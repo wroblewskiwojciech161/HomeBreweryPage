@@ -61,6 +61,10 @@ header .navigation li a{
     margin-left: 40px;
 
 }
+header .navigation li a:hover{
+  color: red;
+
+}
 header .navigation .img-wrapper {
    display: none;
    
@@ -82,7 +86,7 @@ header .navigation .img-wrapper {
 
 .content .textBox h2 {
    
-    color: #fff;
+    color: red;
     font-size: 7rem;
     margin-bottom: 50px;
     line-height: 6rem;
@@ -242,7 +246,7 @@ header .navigation .img-wrapper {
 
     
      .content .textBox h2 {
-         color: #fff;
+         color: red;
          font-size: 3.5rem;
         
          margin-bottom: 20px;
@@ -420,7 +424,7 @@ header .navigation .img-wrapper {
     }
 
     .content .textBox h2 {
-        color: #fff;
+        color: red;
         font-size: 2.5rem;
        
         margin-bottom: 20px;
