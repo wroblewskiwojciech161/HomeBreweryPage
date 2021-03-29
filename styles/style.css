@@ -116,7 +116,7 @@ header .navigation .img-wrapper {
      text-decoration: none;  
     
 }
- .crewBox, .beersBox , .contactBox{
+ .beersBox , .contactBox{
     display: flex;
     height: 100vh;
     width: 100%;
@@ -128,7 +128,62 @@ header .navigation .img-wrapper {
 }
 .crewBox{
     background: #222;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    flex-direction: row;
+  
+    
 }
+.crewBox .conture-left{
+    
+    background: red;
+    font-size: 4.2rem;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    
+}
+.crewBox .conture-left p{
+    padding:5% 5% 5% 5%;
+    text-align: right;
+    margin-left: 5%;
+    
+}
+.crewBox .conture-left img{
+    width: 80%;
+    height: auto;
+}
+
+.crewBox .conture-right{
+    background: green;
+    font-size: 4.2rem;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    
+}
+.crewBox .conture-right p{
+    padding:5% 5% 5% 5%;
+    text-align: left;
+    margin-left: 5%;
+    
+}
+.crewBox .conture-right img{
+    width: 80%;
+    height: auto;
+}
+
 .beersBox{
     background: rgb(22, 22, 22);
 }
@@ -174,6 +229,7 @@ header .navigation .img-wrapper {
    filter: invert(1);
    transform: scale(0.5);
 }
+
 
 
 /*slider*/
@@ -244,6 +300,64 @@ header .navigation .img-wrapper {
         
     }
 
+.crewBox{
+    background: #222;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    flex-direction: column;
+  
+    
+}
+.crewBox .conture-left{
+    
+    background: red;
+    font-size: 2.2rem;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    
+}
+.crewBox .conture-left p{
+    padding:5% 5% 5% 5%;
+    text-align: right;
+    margin-left: 5%;
+    
+}
+.crewBox .conture-left img{
+    width: 65%;
+    height: auto;
+}
+
+.crewBox .conture-right{
+    background: green;
+    font-size: 2.2rem;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    
+}
+.crewBox .conture-right p{
+    padding:5% 5% 5% 5%;
+    text-align: left;
+    margin-left: 5%;
+    
+}
+.crewBox .conture-right img{
+    width: 70%;
+    height: auto;
+}
+
     
      .content .textBox h2 {
          color: red;
@@ -285,7 +399,7 @@ header .navigation .img-wrapper {
         display: none;
     }
 
-    .crewBox, .beersBox , .contactBox{
+     .beersBox , .contactBox{
         display: flex;
         height: 100vh;
         width: 100%;
@@ -468,5 +582,64 @@ header .navigation .img-wrapper {
         align-items: center;
     }
     
+
+    .crewBox{
+        background: #222;
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 40px;
+        flex-direction: column;
+      
+        
+    }
+    .crewBox .conture-left{
+        
+        background: red;
+        font-size: 1.5rem;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+        
+    }
+    .crewBox .conture-left p{
+        padding:5% 5% 5% 5%;
+        text-align: right;
+        margin-left: 5%;
+        
+    }
+    .crewBox .conture-left img{
+        width: 50%;
+        height: auto;
+    }
+    
+    .crewBox .conture-right{
+        background: green;
+        font-size: 1.5rem;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        
+    
+        
+    }
+    .crewBox .conture-right p{
+        padding:5% 5% 5% 5%;
+        text-align: left;
+        margin-left: 5%;
+        
+    }
+    .crewBox .conture-right img{
+        width: 50%;
+        height: auto;
+        
+    }
 
 }

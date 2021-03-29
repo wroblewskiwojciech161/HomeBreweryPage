@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/beerStyles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>HopeDope Homebrwery</title>
 </head>
 <body>
@@ -18,15 +19,14 @@
     <div class="beer-gallery">
         <a  class="back-button" href="./index.html">GO BACK HOME</a>
         <div class="card">
-            <img src="./img/corona.png"/>
-            <div class="textBox">
-                <h2> PIWKO ELEGANCKO</h2>
+            <img  data-aos="fade-right" src="./img/corona.png"/>
+            <div data-aos="fade-left" class="textBox">
+                <h2 data-aos="fade-left"> PIWKO ELEGANCKO</h2>
         
-                <p><img src="./img/hop.png"/> 0 g/l xd</p>
-                <p><img src="./img/cask.png"/> malts</p>
-                <p><img src="./img/alcohol.png"/> 5%</p>
-                <p><img src="./img/ibu.png"/> 10</p>
-               
+                <p data-aos="fade-left"><img src="./img/hop.png"/> 0 g/l xd</p>
+                <p data-aos="fade-left"><img src="./img/cask.png"/> malts</p>
+                <p data-aos="fade-left"><img src="./img/alcohol.png"/> 5%</p>
+                <p data-aos="fade-left"><img src="./img/ibu.png"/> 10</p>
                 
             </div>
            
@@ -38,14 +38,14 @@
 
     <div class="beer-gallery">
         <div class="card">
-            <img src="./img/corona.png"/>
-            <div class="textBox">
-                <h2> PIWKO ELEGANCKO</h2>
+            <img  data-aos="fade-right" src="./img/corona.png"/>
+            <div  class="textBox">
+                <h2 data-aos="fade-left"> PIWKO ELEGANCKO</h2>
         
-                <p><img src="./img/hop.png"/> 0 g/l xd</p>
-                <p><img src="./img/cask.png"/> malts</p>
-                <p><img src="./img/alcohol.png"/> 5%</p>
-                <p><img src="./img/ibu.png"/> 10</p>
+                <p data-aos="fade-left"><img src="./img/hop.png"/> 0 g/l xd</p>
+                <p data-aos="fade-left"><img src="./img/cask.png"/> malts</p>
+                <p data-aos="fade-left"><img src="./img/alcohol.png"/> 5%</p>
+                <p data-aos="fade-left"><img src="./img/ibu.png"/> 10</p>
                
             </div>
 
@@ -57,21 +57,29 @@
 
     <div class="beer-gallery">
         <div class="card">
-            <img src="./img/corona.png"/>
-            <div class="textBox">
-                <h2> PIWKO ELEGANCKO</h2>
+            <img  data-aos="fade-right" src="./img/corona.png"/>
+            <div  data-aos="fade-left" class="textBox">
+                <h2 data-aos="fade-left"> PIWKO ELEGANCKO</h2>
         
-                <p><img src="./img/hop.png"/> 0 g/l xd</p>
-                <p><img src="./img/cask.png"/> malts</p>
-                <p><img src="./img/alcohol.png"/> 5%</p>
-                <p><img src="./img/ibu.png"/> 10</p>
+                <p data-aos="fade-left"><img src="./img/hop.png"/> 0 g/l xd</p>
+                <p data-aos="fade-left"><img src="./img/cask.png"/> malts</p>
+                <p data-aos="fade-left"><img src="./img/alcohol.png"/> 5%</p>
+                <p data-aos="fade-left"><img src="./img/ibu.png"/> 10</p>
              
             </div>
 
         </div>
 
-        <a  class="back-button" href="./index.html">GO BACK HOME</a>
+        <a data-aos="fade-bottom"  class="back-button" href="./index.html">GO BACK HOME</a>
     </div>
-    
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+         AOS.init({
+            delay: 200, // values from 0 to 3000, with step 50ms
+            duration: 2000, // values from 0 to 3000, with step 50ms
+         });
+    </script>
 </body>
 </html>

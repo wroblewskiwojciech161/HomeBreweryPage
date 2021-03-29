@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/styles2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Home Brewery</title>
 </head>
 <body>
@@ -19,14 +19,14 @@
     <section id="home">
         <div class="circle"></div>
 
-        <header>
+        <header >
           
           
             <div class="toggle" onclick="toggleMenu()"></div>
 
             
             
-            <ul class="navigation" id="navigation">
+            <ul data-aos="fade-right" class="navigation" id="navigation">
                 <div class="img-wrapper">
                     <img src="./img/logomain.png"/>
                 </div>
@@ -67,7 +67,7 @@
 
    
 
-        <ul id="mediabar" class="mediabar">
+        <ul  id="mediabar" class="mediabar" >
             <li><a href="#"><img src="img/facebook.png"></a></li>
             <li><a href="#"><img src="img/twitter.png"></a></li>
             <li><a href="#"><img src="img/instagram.png"></a></li>
@@ -80,23 +80,32 @@
         
 
     <div class="crewBox" id="crew">
-           <p>CREW</p>
-           <p>SOON...</p>
-            <!-- beer animation-->
-        <div id="container">
-            <div class="glass">
-              <div class="beer"></div>
-            </div>
-            <div class="head"></div>
-            <div class="pour"></div>
-          </div>
+        <div class="conture-left">
+            
+            <img  class="conture-left" src="img/conture6.png"/>
+            <p data-aos="fade-right" class="conture-left-text">
+                Wojciech Wróblewski
+            </p>
+           
+
+        </div>
+       
+        <div class="conture-right">
+            
+            <img   class="conture-right" src="img/conture6.png"/>
+            <p  data-aos="fade-left" class="conture-right-text">
+                Maks Ulikowski
+            </p>
+
+        </div>
     </div>
 
 
 
+
     <div class="contactBox" id="contact">
-        <p>CONTACT</p>
-        <p>SOON...</p>
+        <p data-aos="fade-right" >CONTACT</p>
+        <p data-aos="fade-left">SOON...</p>
         <!-- beer animation-->
         <div id="container">
             <div class="glass">
@@ -112,7 +121,7 @@
     <!--beer script-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!--slider script-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -133,7 +142,7 @@
           },
           loop:true,
           autoplay:{
-            delay:2300,
+            delay:1800,
           },
         });
 
@@ -173,7 +182,10 @@
           x.style.right = "0";
       }
 
-
+      AOS.init({
+            delay: 50, // values from 0 to 3000, with step 50ms
+            duration: 2000, // values from 0 to 3000, with step 50ms
+         });
       </script>
     
 </body>
