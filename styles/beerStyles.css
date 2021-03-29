@@ -1,0 +1,94 @@
+
+.beer-gallery{
+    padding-top: 5vh;
+    
+    width: 100vw;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bangers', cursive;
+    
+    
+}
+
+.beer-gallery .card{
+    
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    background: black;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.beer-gallery .card .textBox{
+    color: white;
+    background: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+/*small size screen */
+.beer-gallery .card .textBox h2{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    
+}
+
+
+.beer-gallery .card .textBox p{
+    font-size: 1.2rem;
+    
+}
+
+.beer-gallery .card img{
+    height: 100%;
+   
+ 
+}
+.back-button{
+    text-decoration: none;
+    color: red;
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+}
+
+
+
+/* ;arger screens */
+@media (min-width: 400px){
+
+    .beer-gallery .card .textBox{
+        color: white;
+        background: black;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    .beer-gallery .card .textBox h2{
+        font-size: 4rem;
+        line-height: 4.5rem;
+        
+    }
+    
+    
+    .beer-gallery .card .textBox p{
+        font-size: 3rem;
+        
+    }
+    .back-button{
+        text-decoration: none;
+        color: red;
+        font-family: 'Bangers', cursive;
+        font-size: 4rem;
+    }
+
+
+}

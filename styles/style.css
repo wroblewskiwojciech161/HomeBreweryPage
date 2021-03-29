@@ -359,7 +359,7 @@ header .navigation .img-wrapper {
     .toggle{
         
         position: fixed;
-        margin-top: 5vh;
+        margin-top: 50px;
         width: 30px;
         height: 30px;
         background-size: 30px;
@@ -370,7 +370,7 @@ header .navigation .img-wrapper {
         z-index: 10000;
     }
     .toggle.active{
-        margin-top: 5vh;
+        margin-top: 50px;
         background-size: 30px;
         background: url("../img/close.png");
         background-repeat: no-repeat;
