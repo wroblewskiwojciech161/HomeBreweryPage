@@ -62,7 +62,7 @@ header .navigation li a{
 
 }
 header .navigation li a:hover{
-  color: red;
+  color: #d63031;
 
 }
 header .navigation .img-wrapper {
@@ -86,9 +86,16 @@ header .navigation .img-wrapper {
 
 .content .textBox h2 {
    
-    color: red;
+    color: #d63031;
     font-size: 7rem;
     margin-bottom: 50px;
+    line-height: 6rem;
+
+}
+.content .textBox h2 img{
+   
+    margin-right: 0;
+    height: 7rem;
     line-height: 6rem;
 
 }
@@ -98,7 +105,7 @@ header .navigation .img-wrapper {
 
 }
 .content .textBox .redlabel {
-    color: red;
+    color: #d63031;
     font-size: 1.5rem;
    
     
@@ -107,7 +114,7 @@ header .navigation .img-wrapper {
      display: inline-block;
      margin-top: 20px;
      padding: 8px 20px;
-     background: #e51e2a;
+     background: #d63031;
      color: #fff;
      border-radius: 40px; 
      font-weight: 500;
@@ -127,7 +134,7 @@ header .navigation .img-wrapper {
     flex-direction: column;
 }
 .crewBox{
-    background: #222;
+    background: black;
     display: flex;
     height: 100vh;
     width: 100%;
@@ -136,59 +143,71 @@ header .navigation .img-wrapper {
     color: white;
     font-size: 40px;
     flex-direction: row;
+    overflow: hidden;
+    column-gap: 5vw;
+  
+ 
   
     
 }
 .crewBox .conture-left{
-    
-    background: red;
-    font-size: 4.2rem;
-    width: 50%;
+    padding-top: 5%;
+    background: #d63031;
+    font-size: 3.3rem;
+    width: 40vw;
     height: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+
+    border-radius: 10%;
+  
     
     
 }
 .crewBox .conture-left p{
-    padding:5% 5% 5% 5%;
-    text-align: right;
-    margin-left: 5%;
+    width: 20vw;
+   
+    
     
 }
 .crewBox .conture-left img{
-    width: 80%;
-    height: auto;
+    width: 20vw;
+    height: 80%;
 }
 
 .crewBox .conture-right{
-    background: green;
-    font-size: 4.2rem;
-    width: 50%;
+    padding-top: 5%;
+    background: #fdcb6e;
+    font-size: 3.3rem;
+    width: 40vw;
     height: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+
+  
+    border-radius: 10%;
+  
+  
 
     
 }
 .crewBox .conture-right p{
-    padding:5% 5% 5% 5%;
-    text-align: left;
-    margin-left: 5%;
+    width: 20vw;
+ 
     
 }
 .crewBox .conture-right img{
-    width: 80%;
-    height: auto;
+    background: transparent;
+    transform: scaleX(-1);
+    width: 20vw;
+    height: 80%;
 }
 
 .beersBox{
     background: rgb(22, 22, 22);
 }
 .contactBox{
-    background: rgb(214, 65, 65);
+    background:#ff7675;
 }
 .beersBox img{
     height: 50%;
@@ -210,7 +229,7 @@ header .navigation .img-wrapper {
 .mediabar li a{
     display: inline-block;
     margin-left:15px ;
-    background: #222;
+    background: black;
     width: 50px;
     height: 50px;
     display: flex;
@@ -301,10 +320,9 @@ header .navigation .img-wrapper {
     }
 
 .crewBox{
-    background: #222;
+    background: black;
     display: flex;
-    height: 100vh;
-    width: 100%;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     color: white;
@@ -314,59 +332,67 @@ header .navigation .img-wrapper {
     
 }
 .crewBox .conture-left{
-    
-    background: red;
-    font-size: 2.2rem;
-    width: 100%;
-    height: 70%;
+    width: 100vw;
+    max-width: 100vw;
+    background: #fdcb6e;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    border-radius: 0;
     
     
 }
 .crewBox .conture-left p{
-    padding:5% 5% 5% 5%;
-    text-align: right;
-    margin-left: 5%;
+   font-size: 2rem;
+   margin-left: 50vw;
     
 }
 .crewBox .conture-left img{
-    width: 65%;
-    height: auto;
+   width: 70%;
+   height: 35vh;
 }
 
 .crewBox .conture-right{
-    background: green;
-    font-size: 2.2rem;
-    width: 100%;
-    height: 70%;
+   
+    width: 100vw;
+    max-width: 100vw;
+    background: #d63031;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    border-radius: 0;
+    flex-direction: row-reverse;
+   
 
     
 }
 .crewBox .conture-right p{
-    padding:5% 5% 5% 5%;
-    text-align: left;
-    margin-left: 5%;
+    font-size: 2rem;
+    margin-left: 50vw;
     
 }
 .crewBox .conture-right img{
     width: 70%;
-    height: auto;
+    height: 35vh;
+    transform: scaleX(1);
+   
 }
 
     
      .content .textBox h2 {
-         color: red;
+         color: #d63031;
          font-size: 3.5rem;
         
          margin-bottom: 20px;
          
      
      }
+
+     .content .textBox h2 img{
+   
+        margin-right: 0;
+        height: 3.5rem;
+       
+    
+    }
     
      .content .textBox p {
          color: #fff;
@@ -375,7 +401,7 @@ header .navigation .img-wrapper {
          
      }
      .content .textBox .redlabel {
-        color: red;
+        color: #d63031;
         font-size: 18px;
        
         
@@ -490,7 +516,7 @@ header .navigation .img-wrapper {
     .mediabar li a{
         display: inline-block;
         margin-left:15px ;
-        background: #222;
+        background: black;
         width: 30px;
         height: 30px;
         display: flex;
@@ -538,10 +564,17 @@ header .navigation .img-wrapper {
     }
 
     .content .textBox h2 {
-        color: red;
+        color: #d63031;
         font-size: 2.5rem;
        
         margin-bottom: 20px;
+        
+    
+    }
+    .content .textBox h2 img{
+   
+        margin-right: 0;
+        height: 2.5rem;
         
     
     }
@@ -584,7 +617,7 @@ header .navigation .img-wrapper {
     
 
     .crewBox{
-        background: #222;
+        background: black;
         display: flex;
         height: 100vh;
         width: 100%;
@@ -598,47 +631,55 @@ header .navigation .img-wrapper {
     }
     .crewBox .conture-left{
         
-        background: red;
+        background: #d63031;
         font-size: 1.5rem;
         width: 100%;
         height: 70%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        border-radius: 0;
         
         
     }
     .crewBox .conture-left p{
-        padding:5% 5% 5% 5%;
-        text-align: right;
-        margin-left: 5%;
+        margin-left: 40vw;
+    
+        font-size: 2rem;
+        bottom: 0;
         
     }
     .crewBox .conture-left img{
         width: 50%;
-        height: auto;
+        height: 80%;
     }
     
     .crewBox .conture-right{
-        background: green;
+        
+        
+        background: #fdcb6e;
         font-size: 1.5rem;
         width: 100%;
         height: 70%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
+        text-align: right;
+        border-radius: 0;
         
     
         
     }
     .crewBox .conture-right p{
-        padding:5% 5% 5% 5%;
-        text-align: left;
-        margin-left: 5%;
+        justify-content: flex-end;
+        margin-left: 40vw;
+        font-size: 2rem;
+        bottom: 0;
         
     }
     .crewBox .conture-right img{
+        margin-top: 10vh;
         width: 50%;
-        height: auto;
+        height: 80%;
         
     }
 

@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Bangers', cursive;
+    overflow: hidden;
     
     
 }
@@ -35,27 +36,27 @@
 
 /*small size screen */
 .beer-gallery .card .textBox h2{
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
     color: red;
     max-width: 40%;
     
 }
 .beer-gallery .card  p{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     
 }
 
 .beer-gallery .card .textBox p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     
 }
 
 .beer-gallery .card .textBox p img{
     padding: 5px 5px 5px 5px;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     background-color: white;
     border-radius: 5px;
 }
@@ -81,8 +82,9 @@
 }
 
 
+
 /* ;arger screens */
-@media (min-width: 400px){
+@media (min-width: 500px){
 
     .beer-gallery .card .textBox{
         color: white;
@@ -94,19 +96,19 @@
     }
 
     .beer-gallery .card .textBox h2{
-        font-size: 4rem;
-        line-height: 4.5rem;
+        font-size: 3.7rem;
+        line-height: 4rem;
         
     }
     
     
     .beer-gallery .card .textBox p{
-        font-size: 3rem;
+        font-size: 2.7rem;
         
     }
 
     .beer-gallery .card .textBox p img{
-        height: 50px;
+        height: 40px;
         width: auto;
         
     }
