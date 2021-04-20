@@ -23,7 +23,7 @@
     margin-top: 5vh;
     margin-bottom: 5vh;
     margin-left: 5vh;
-    margin-right: 5vh;
+   
 }
 
 .beer-gallery .card .textBox{
@@ -31,6 +31,13 @@
     background: black;
     padding-left: 5px;
     padding-right: 5px;
+    margin-left: 5vw;
+    max-width: 35vw;
+    
+}
+
+.beer-gallery .card .imageBox{
+    height: 60vh;
     
 }
 
@@ -50,6 +57,7 @@
 
 .beer-gallery .card .textBox p{
     font-size: 1.1rem;
+    padding-bottom: 2vh;
     
 }
 
@@ -91,7 +99,12 @@
         background: black;
         padding-left: 10px;
         padding-right: 10px;
-        max-width: 40%;
+        
+        margin-left : 100px;
+        
+    }
+    .beer-gallery .card .imageBox{
+        height: 60vh;
         
     }
 
@@ -104,6 +117,7 @@
     
     .beer-gallery .card .textBox p{
         font-size: 2.7rem;
+        padding-bottom:3px ;
         
     }
 

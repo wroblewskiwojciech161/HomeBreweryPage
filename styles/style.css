@@ -70,6 +70,10 @@ header .navigation .img-wrapper {
    
 }
 
+.card .textBox{
+    margin-right: 100px;
+}
+
 .content {
     position: relative;
     width: 100%;
