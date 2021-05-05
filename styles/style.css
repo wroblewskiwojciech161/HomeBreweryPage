@@ -162,7 +162,7 @@ header .navigation .img-wrapper {
     height: 70%;
     display: flex;
     flex-direction: row;
-
+    text-decoration: none;
     border-radius: 10%;
   
     
@@ -171,9 +171,12 @@ header .navigation .img-wrapper {
 .crewBox .conture-left p{
     width: 20vw;
    
-    
-    
 }
+.crewBox .conture-left p a{
+    text-decoration: none;
+    color: white;
+}
+
 .crewBox .conture-left img{
     width: 20vw;
     height: 80%;
@@ -383,7 +386,7 @@ header .navigation .img-wrapper {
     
      .content .textBox h2 {
          color: #d63031;
-         font-size: 3.5rem;
+         font-size: 3rem;
         
          margin-bottom: 20px;
          
@@ -400,7 +403,7 @@ header .navigation .img-wrapper {
     
      .content .textBox p {
          color: #fff;
-         font-size: 20px;
+         font-size: 13px;
         
          
      }
